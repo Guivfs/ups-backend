@@ -1,9 +1,9 @@
 class UserModel {
-    constructor(nomeUsuario, userUsuario, senhaUsuario, cepUsuario, emailUsuario) {
+    constructor(nomeUsuario, userUsuario, senhaUsuario, cpfUsuario, emailUsuario) {
       this.nomeUsuario = nomeUsuario;
       this.userUsuario = userUsuario;
       this.senhaUsuario = senhaUsuario;
-      this.cepUsuario = cepUsuario;
+      this.cpfUsuario = cpfUsuario;
       this.emailUsuario = emailUsuario;
     }
   }
