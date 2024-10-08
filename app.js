@@ -48,3 +48,4 @@ app.use((req, res) => {
 app.listen(8080, () => console.log("Servidor está rodando na porta: 8080 -> http://localhost:8080/"));
 
 module.exports = clientDB;
+module.exports = app;
