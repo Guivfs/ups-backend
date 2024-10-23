@@ -14,7 +14,12 @@ const { config } = require('dotenv');
 config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:4200',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+app.options('*', cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(allRoutes);
