@@ -34,9 +34,7 @@ class VagaController {
       res.json(rows);
     } catch (error) {
       console.error("Erro ao obter vagas da empresa:", error);
-      res.status(500).json({ msg: "Erro interno do servidor ao obter vagas da empresa.",
-        "banco de dados":clientDB
-       });
+      res.status(500).json({ msg: "Erro interno do servidor ao obter vagas da empresa."  });
     }
   }
 
@@ -167,7 +165,7 @@ class VagaController {
       res.json(rows);
     } catch (error) {
       console.error("Erro ao obter vagas:", error);
-      res.status(500).json({ msg: "Erro interno do servidor ao obter vagas." });
+      res.status(500).json({ msg: "Erro interno do servidor ao obter vagas.", test:clientDB });
     }
   }
 
