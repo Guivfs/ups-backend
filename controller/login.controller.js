@@ -19,7 +19,7 @@ class LoginController {
     console.log(email, senha);
 
     if (!email || !senha) {
-      return res.status(422).json({ msg: "E-mail e senha são obrigatórios" });
+      return res.status(422).json({ msg: "E-mail e senha são obrigatórios", email,senha });
     }
 
     try {
